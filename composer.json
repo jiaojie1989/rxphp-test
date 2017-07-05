@@ -8,6 +8,6 @@
         }
     ],
     "require": {
-        "reactivex/rxphp": "^1.0"
+        "reactivex/rxphp": "^1.5"
     }
 }
