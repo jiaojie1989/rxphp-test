@@ -1,0 +1,13 @@
+{
+    "name": "jiaojie/rxphp_test",
+    "description": "Reactive Programming",
+    "authors": [
+        {
+            "name": "JIAO Jie",
+            "email": "thomasjiao@vip.qq.com"
+        }
+    ],
+    "require": {
+        "reactivex/rxphp": "^1.5"
+    }
+}

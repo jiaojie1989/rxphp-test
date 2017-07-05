@@ -1,0 +1,70 @@
+[
+    {
+        "name": "reactivex/rxphp",
+        "version": "1.5.3",
+        "version_normalized": "1.5.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ReactiveX/RxPHP.git",
+            "reference": "31f36d69cf9ab121eff726fc0d003b2ccfc3ab16"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/ReactiveX/RxPHP/31f36d69cf9ab121eff726fc0d003b2ccfc3ab16.zip",
+            "reference": "31f36d69cf9ab121eff726fc0d003b2ccfc3ab16",
+            "shasum": ""
+        },
+        "require": {
+            "php": "~5.5|~7.0"
+        },
+        "require-dev": {
+            "phpunit/phpcov": "^3.1",
+            "phpunit/phpunit": "^5.5",
+            "react/event-loop": "~0.4.1",
+            "react/promise": "~2.2",
+            "satooshi/php-coveralls": "~1.0"
+        },
+        "suggest": {
+            "react/event-loop": "For using event-loop based scheduling.",
+            "react/promise": "For converting promises to and from observables."
+        },
+        "time": "2017-03-14 21:00:10",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Rx\\": "lib/Rx"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alexander",
+                "email": "iam.asm89@gmail.com"
+            },
+            {
+                "name": "David Dan",
+                "email": "davidwdan@gmail.com"
+            },
+            {
+                "name": "Matt Bonneau",
+                "email": "matt@bonneau.net"
+            }
+        ],
+        "description": "Reactive extensions for php.",
+        "homepage": "https://github.com/ReactiveX/RxPHP",
+        "keywords": [
+            "extensions",
+            "reactive",
+            "rx"
+        ]
+    }
+]
