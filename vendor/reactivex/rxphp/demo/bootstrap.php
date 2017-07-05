@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-if (file_exists($file = __DIR__.'/../vendor/autoload.php')) {
+if (file_exists($file = __DIR__.'/../../../../vendor/autoload.php')) {
     $autoload = require_once $file;
     $autoload->addPsr4('Vendor\\Rx\\Operator\\', __DIR__ . '/custom-operator');
 } else {
