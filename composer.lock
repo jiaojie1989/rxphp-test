@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "05f18d8df221dd9f9eacd2e2fc739868",
-    "content-hash": "81f514ae8d2cb1b1050996ce829d3913",
+    "hash": "897035c2d75f44491858e97a77e8739b",
+    "content-hash": "2e078697c9ab35e86c457090aceb0003",
     "packages": [
         {
             "name": "reactivex/rxphp",

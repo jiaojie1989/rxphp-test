@@ -1,5 +1,5 @@
 {
-    "name": "jiaojie/rxphp_test",
+    "name": "jiaojie1989/rxphp_test",
     "description": "Reactive Programming",
     "authors": [
         {
@@ -8,6 +8,6 @@
         }
     ],
     "require": {
-        "reactivex/rxphp": "^1.5"
+        "reactivex/rxphp": "^1.0"
     }
 }
