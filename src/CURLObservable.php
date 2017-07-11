@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Copyright (C) 2017 SINA Corporation
  *  
@@ -32,14 +31,13 @@ class CURLObservable implements Observable
 {
 
     private $url;
-    private $observers;
 
     public function __construct($url)
     {
         $this->url = $url;
     }
 
-    public function  subscribe(ObserverInterface $observer, $scheduler = null)
+    public function subscribe(ObserverInterface $observer, $scheduler = null)
     {
         
     }
