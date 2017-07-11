@@ -9,5 +9,10 @@
     ],
     "require": {
         "reactivex/rxphp": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jiaojie\\": "src/"
+        }
     }
 }

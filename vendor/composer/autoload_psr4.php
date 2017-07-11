@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Rx\\' => array($vendorDir . '/reactivex/rxphp/lib/Rx'),
+    'Jiaojie\\' => array($baseDir . '/src'),
 );
