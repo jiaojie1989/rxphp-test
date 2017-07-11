@@ -31,6 +31,12 @@ class DebugSubject extends \Rx\Subject\Subject
         $this->maxLen = $maxLen;
     }
 
+    public function onError(\Exception $exception)
+    {
+        printf("%s%s onError [%s : %s]\n", $this->getTime(), $this->id(), get_class($exception), $exception->getMessage());
+        parent::onError($exception);
+    }
+
     public function onCompleted()
     {
         printf("%s%s onCompleted\n", $this->getTime(), $this->id());
