@@ -17,8 +17,8 @@ use Rx\Observable;
 
 require __DIR__ . "/../vendor/autoload.php";
 
-Observable::just('{"value"a: 42}')
+Observable::just('{"value": 42}')
         ->lift(function() {
             return new JSONDecodeOperator();
         })
-        ->subscribe(new DebugSubject());
+        ->subscribe(new DebugSubject("TEST"));
