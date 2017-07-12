@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Copyright (C) 2017 SINA Corporation
  *  
@@ -27,7 +28,7 @@ use Rx\SchedulerInterface;
  * @version 0.1
  * @description 
  */
-class CURLObservable implements Observable
+class CURLObservable extends Observable
 {
 
     private $url;
@@ -39,7 +40,7 @@ class CURLObservable implements Observable
 
     public function subscribe(ObserverInterface $observer, $scheduler = null)
     {
-        
+        $disp1 = parent::subscribe();
     }
 
     private function startDownload()
