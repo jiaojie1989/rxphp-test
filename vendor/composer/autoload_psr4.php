@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Rx\\' => array($vendorDir . '/reactivex/rxphp/lib/Rx'),
+    'React\\EventLoop\\' => array($vendorDir . '/react/event-loop/src'),
     'Jiaojie\\' => array($baseDir . '/src'),
 );

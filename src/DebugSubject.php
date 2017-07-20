@@ -51,7 +51,7 @@ class DebugSubject extends \Rx\Subject\Subject
         } elseif (is_object($val)) {
             $str = get_class($val);
         } elseif (is_array($val)) {
-            $str = json_encode($val);
+            $str = json_encode($val, JSON_PRETTY_PRINT);
         } else {
             $str = $val;
         }
