@@ -40,7 +40,24 @@ class CURLObservable extends Observable
 
     public function subscribe(ObserverInterface $observer, $scheduler = null)
     {
-        $disp1 = parent::subscribe();
+        $disp1 = parent::subscribe($observer, $scheduler);
+
+        if (null === $scheduler) {
+            $scheduler = new \Rx\Scheduler\ImmediateScheduler();
+        }
+
+        $disp2 = $scheduler->schedule(function() use ($observer) {
+            $response = $this->startDownload();
+            if ($response) {
+                $observer->onNext($response);
+                $observer->onCompleted();
+            } else {
+                $msg = "Unable to download {$this->url}";
+                $observer->onError(new \Exception($msg));
+            }
+        });
+
+        return new \Rx\Disposable\CompositeDisposable([$disp1, $disp2]);
     }
 
     private function startDownload()
